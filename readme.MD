@@ -1,7 +1,16 @@
 
+create env and read env.example 
+
+# first 
+git clone => https://github.com/prakashuniyal01/BrewApps-LLC.git
+
+# npm i 
+
+# npm run dev 
 
 
 
+apis end points
 
 # api and points 
 
@@ -24,3 +33,6 @@ http://localhost:4000/api/v1/books/:id
 
 delete
 http://localhost:4000/api/v1/books/:id
+
+
+video link => https://www.youtube.com/watch?v=S3NsbXUCZKo
