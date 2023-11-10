@@ -1,5 +1,6 @@
 const express = require('express');
 const { rateLimit } = require('express-rate-limit');
+const morgan = require('morgan')
 
 const {appRoutes} = require('./routes');
 const {logErrors, clientErrorHandler, errorHandler} = require('../common/error')
@@ -14,6 +15,7 @@ const apiRateLimiter = rateLimit({
 
 // Apply the rate limiting middleware to API calls only
 app.use(express.json()) // deserialization.
+app.use(morgan('combined')) // register entry.
 
 
 app.use('/api', apiRateLimiter) // rate limiting
